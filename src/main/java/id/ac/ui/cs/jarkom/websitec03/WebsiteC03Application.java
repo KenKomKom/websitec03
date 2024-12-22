@@ -9,7 +9,4 @@ public class WebsiteC03Application {
 	public static void main(String[] args) {
 		SpringApplication.run(WebsiteC03Application.class, args);
 	}
-
-
-
 }

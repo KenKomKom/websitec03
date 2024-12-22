@@ -5,10 +5,6 @@ plugins {
 	jacoco
 }
 
-springBoot {
-	mainClass.set("id.ac.ui.cs.jarkom.WebsiteC03")
-}
-
 group = "id.ac.ui.cs.advprog"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
