@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - main
+      - staging
   workflow_dispatch:
-    
+
 jobs:
   build:
     name: Build
@@ -81,7 +82,6 @@ jobs:
   publish:
     name: Publish Docker Image
     runs-on: ubuntu-latest
-    needs: test
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
