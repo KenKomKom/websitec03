@@ -28,8 +28,10 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.springframework.boot:spring-boot-starter-actuator:3.2.5")
 	implementation("org.thymeleaf.extras:thymeleaf-extras-springsecurity6")
-
+	implementation ("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.postgresql:postgresql")
 	compileOnly("org.projectlombok:lombok")
+	runtimeOnly("org.postgresql:postgresql")
 
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 
