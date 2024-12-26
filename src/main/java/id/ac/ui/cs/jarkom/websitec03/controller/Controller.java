@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @RestController
-@RequestMapping("")
+@RequestMapping("/")
 public class Controller {
     @Autowired
     private Repository repo;
@@ -33,7 +33,7 @@ public class Controller {
         return getModelAndView(homeHTML);
     }
 
-    @PostMapping("/savesql")
+    @GetMapping("/savesql")
     @ResponseStatus(HttpStatus.CREATED)
     public Company addCompany()
     {
